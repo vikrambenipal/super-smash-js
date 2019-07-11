@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Super Smash Bros JS</title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+
+    
+    <body>
+        <canvas id="canvas"> </canvas><br>
+            <!-- When we press the button, the attack() function will be called. -->
+        <button class="attack_button" id="fireball-button" onclick="fireball()">Fireball</button>
+        <button class="attack_button" id="fludd-button" onclick="fludd()">F.L.U.D.D</button>
+        <button class="attack_button" id="aerial-punch-button" onclick="aerial_punch()">Aerial Punch</button>
+        <button class="attack_button" id="super-mushroom-button" onclick="super_mushroom()">Super Mushroom</button>
+        <button class="attack_button" id="mario-finale" onclick="mario_finale()">Mario Finale</button>
+        <button class="attack_button"id="restart-button" onclick="restartGame()" hidden="true">Restart</button>
+        <br>
+
+        
+        <!-- The spans help select only the number  -->
+        <!-- Character Icon and % Number -->
+        <div class="test">
+        <img class="icon"src="mario_head.png" style="width:70px; height: 60px">
+        </div>
+        <h3 class="character_stats">Mario: <span class="percent" id="mario-health">0</span>%</h3>
+
+        <div class="test">
+     
+        <img class="icon"src="link_icon.png">
+        </div>
+        <h3 class="character_stats">Link: <span class="percent" id="link-health">0</span>%</h3>
+        
+
+        <h3 id="game-message">Attack to Start Game!</h3>
+
+
+        <!-- Music and Sound Effects: -->
+        <!-- Music Tracks (3 Selections) -->
+        <audio src="alert.mp3" id="sound1"></audio>
+        <audio src="snake_eater.mp3" id="sound2"></audio>
+        <audio src="fd64.mp3" id="sound3"></audio>
+
+        <!-- Sound Effects: General -->
+        <audio src="punch.mp3" id="punch"></audio>
+        <audio src="homerun.mp3" id="homerun"></audio>
+        <audio src="game.mp3" id="game"></audio>
+        
+
+        <!-- Audience reaction -->
+        <audio src="gasp.mp3" id="gasp"></audio>
+        <audio src="aww.mp3" id="aww"></audio>
+
+
+        <!-- Sound Effects: Mario -->
+        <audio src="mario_scream.mp3" id="mario-scream"></audio>
+        <audio src="heal.mp3" id="heal"></audio>
+
+        <!-- Sound Effects: Link -->
+        <audio src="link_scream.mp3" id="link-scream"></audio>
+        <audio src="link_attack_rose.mp3" id="link-attack-rose"></audio>
+
+
+        <img hidden="true" id="bg" src="fdsmash.png" style="width: 850px; height: 400">
+
+        <script src="game.js"></script>
+    </body>
+    
+
+
+</html>
