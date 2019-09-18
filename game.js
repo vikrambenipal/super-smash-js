@@ -120,14 +120,14 @@ var music = [sound1,sound2,sound3];
 var mario = {
     percent: 0,
     attack: 1,
-    ko: (Math.random()*50) + 300,
+    ko: 350,
 };
 
 // Link Object
 var link = {
     percent: 0,
     attack: 1,
-    ko: (Math.random()*50) + 300,
+    ko: 350,
 };
 
 function attack(marioAttack,message){   
